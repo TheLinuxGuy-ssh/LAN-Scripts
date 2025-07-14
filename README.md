@@ -1,0 +1,3 @@
+# LAN-Scripts
+
+there are just some basic scripts used to control and manage the server cluster easily, saving some time...
