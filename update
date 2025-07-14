@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Starting Updates On Registered Machines"
+
+machines="codeplanet-core home outreach"
+
+for machine in ${machines}
+do
+	ssh $machine 'command -v apt /dev/null && (apt update -y && apt upgrade -y) || (pacman -Syu --noconfirm)'
+done
+
+echo "All Machines have been updated"
